@@ -30,7 +30,7 @@ export const resolvers = {
       if (!user) {
         throw unauthorizedError('Missing authentication');
       }
-      return createJob({ companyId: user.companyId, title, description });
+      return createJob({ companyId: user.companyId, title, description }); 
     },
 
     deleteJob: async (_root, { id }, { user }) => {

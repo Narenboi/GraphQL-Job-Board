@@ -40,6 +40,11 @@ await connection.table('company').insert([
     name: 'Goobook',
     description: 'We are a startup on a mission to disrupt search social media. Think Google meet Facebook.',
   },
+  {
+    id: '95ha8sLcnF5d',
+    name: 'Zealand',
+    description: 'We are a school, that aims to educate students in the best manner. We are located in Denmark, and have a lot of international students.',
+  },
 ]);
 
 await connection.table('job').insert([
@@ -78,6 +83,12 @@ await connection.table('user').insert([
     companyId: 'Gu7QW9LcnF5d',
     email: 'bob@goobook.co',
     password: 'bob123',
+  },
+  {
+    id: 'BvBNW222228L',
+    companyId: '95ha8sLcnF5d',
+    email: 'luhavenkvist@yahoo.dk',
+    password: '123',
   },
 ]);
 

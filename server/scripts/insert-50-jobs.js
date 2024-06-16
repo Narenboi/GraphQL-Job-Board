@@ -8,7 +8,7 @@ await connection.table('job').truncate();
 const companyIds = await connection.table('company').pluck('id');
 
 const jobs = [];
-for (let n = 1; n <= 50; n++) {
+for (let n = 1; n <= 70; n++) {
   jobs.push({
     id: n.toString().padStart(12, '0'),
     companyId: companyIds[n % companyIds.length],
